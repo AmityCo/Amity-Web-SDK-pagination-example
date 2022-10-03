@@ -1,4 +1,6 @@
-## Instruction
+## `Instruction`
+
+This project is build for an example code how to use pagination by using our ASC JS-SDK.
 
 1. cp .env.example .env
 2. config your APIKEY, userId, community ID inside .env
