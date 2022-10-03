@@ -5,6 +5,7 @@ import GetPostsObject from "./getPostsObject";
 import "./App.css";
 
 const APIKEY = process.env.REACT_APP_APIKEY;
+const APIREGION = process.env.REACT_APP_APIREGION;
 const USERID = process.env.REACT_APP_USERID;
 const DISPLAYAME = process.env.REACT_APP_DISPLAYAME;
 
@@ -14,6 +15,7 @@ function App() {
   useEffect(() => {
     const ascClient = new ASCClient({
       apiKey: APIKEY,
+      apiRegion: APIREGION,
     });
     ascClient.registerSession({ userId: USERID, displayName: DISPLAYAME });
     ascClient.on("connectionStatusChanged", (data) => {
